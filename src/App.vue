@@ -6,7 +6,7 @@
   import MyProjects from './components/MyProjects.vue'
   import UnderConstruction from './components/UnderConstruction.vue';
   import NotFound from './components/NotFound.vue'
-  const u_constr = ref(true)
+  const u_constr = ref(false)
 
   const routes = {
   '/': u_constr.value ? UnderConstruction : PersonalPage,
