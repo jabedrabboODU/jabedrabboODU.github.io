@@ -6,7 +6,7 @@
 
     <!-- Main content -->
     <div class="row m-5">
-      <div class="col-2">
+      <div class="col-md-2">
         <div class="row">
           <div class="col">
             <img class="img-fluid" style="border-style: inset; border-width: 4px; border-color: yellow; " src="/me.jpg" alt="A Picture of me, myself, and I">
@@ -20,7 +20,7 @@
           </div>
         </div>
       </div>
-      <div class="col-10 border-start border-2">
+      <div class="col-md-10 border-start border-2">
         <h1 class="w-100 text-danger" style="font-family:'Times New Roman'">Projects of mine:</h1>
         <p class="justify" style="font-family:'Times New Roman'; color: white;">
           I'll add them later. Don't worry!

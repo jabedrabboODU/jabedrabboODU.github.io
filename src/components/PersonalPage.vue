@@ -5,7 +5,12 @@
 <template>
     <!-- Main content -->
     <div @click="playMusic" class="row m-5">
-      <div class="col-2">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center text-warning fw-bold" style="font-family:'Times New Roman'">Welcome to Jeries's Page!</h1>
+        </div>
+      </div>
+      <div class="col-md-2">
         <div class="row">
           <div class="col">
             <img class="img-fluid" style="border-style: inset; border-width: 4px; border-color: yellow; " src="/me.jpg" alt="A Picture of me, myself, and I">
@@ -19,7 +24,7 @@
           </div>
         </div>
       </div>
-      <div class="col-10 border-start border-2">
+      <div class="col-md-10 border-start border-2">
         <h1 class="w-100 text-danger" style="font-family:'Times New Roman'">Who am I?</h1>
         <p class="justify" style="font-family:'Times New Roman'; color: white;">
           My name is Jeries Abedrabbo, and I'm a Senior Software Engineer and an Aerospace Engineer!
