@@ -65,7 +65,7 @@
       </audio>        
     </div>
   </div>  
-  <component :is="currentView" />
+  <component :is="currentView" @click="playMusic"/>
   <!-- Footer content -->
   <div class="row fixed-bottom">
     <div v-if="u_constr" class="row">
