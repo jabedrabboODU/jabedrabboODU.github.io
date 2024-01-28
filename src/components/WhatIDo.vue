@@ -1,34 +1,8 @@
 <script setup>
-  import { onMounted, ref } from 'vue'
-  const curr_year = ref(new Date().getFullYear())
-  const bg_music = ref('bg_music')
-  onMounted(() => {
-    console.log("Mounted, now time to play music!")
-    // var audio = new Audio('/interstellar_nocopyright.mp3')
-    // document.getElementById(bg_music.value).muted = "true"
-    document.getElementById(bg_music.value).pause()
-    document.getElementById(bg_music.value).play()
-
-  })
   document.title = "Jeries Abedrabbo - What do I do?"
 </script>
 
 <template>
-
-    <!-- Row for any alerts on top of page -->
-    <div class="row">
-      <div class="col">
-        <!-- <div class="alert alert-danger">
-          <strong>Problem!</strong> This is a placeholder for any new alers that might happen.
-        </div>       -->
-        <audio :id="bg_music" autoplay>
-          <source src="/interstellar_nocopyright.mp3" type="audio/mpeg">
-          <div class="alert alert-warning">
-            <strong>Problem!</strong> Your browser does not support the audio element.
-          </div>                
-        </audio>        
-      </div>
-    </div>
 
     <!-- Main content -->
     <div class="row m-5">
@@ -87,13 +61,6 @@
             </li>
           </div>
         </div> -->
-      </div>
-    </div>
-
-    <!-- Footer content -->
-    <div class="row fixed-bottom">
-      <div class="col text-center">
-        <small class="bg-primary text-warning">Copyright Reserved &copy; {{curr_year}} - Jeries Abedrabbo</small>
       </div>
     </div>
 

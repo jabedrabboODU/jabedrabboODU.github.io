@@ -1,41 +1,8 @@
 <script setup>
-  import { onMounted, ref } from 'vue'
-  const curr_year = ref(new Date().getFullYear())
-  const email = ref('mailto:jeriesabedrabbo955@msn.com')
-  const bg_music = ref('bg_music')
-  onMounted(() => {
-    console.log("Mounted, now time to play music!")
-    // var audio = new Audio('/interstellar_nocopyright.mp3')
-    // document.getElementById(bg_music.value).muted = "true"
-    document.getElementById(bg_music.value).pause()
-    document.getElementById(bg_music.value).play()
-
-  })
-  
-  function playMusic() {
-    console.log("Playing now after click!")
-    document.getElementById(bg_music.value).play()
-  }
+  document.title = "Jeries Abedrabbo's Personal Website"
 </script>
 
 <template>
-
-    <!-- Row for any alerts on top of page -->
-    <!-- Added w-100 to class row in this div, because it seems to remove the horizontal overflow scroll bar -->
-    <div class="row w-100">
-      <div class="col">
-        <!-- <div class="alert alert-danger">
-          <strong>Problem!</strong> This is a placeholder for any new alers that might happen.
-        </div>       -->
-        <audio class="h-75" :id="bg_music" controls autoplay loop>
-          <source src="/interstellar_nocopyright.mp3" type="audio/mpeg">
-          <div class="alert alert-warning">
-            <strong>Problem!</strong> Your browser does not support the audio element.
-          </div>                
-        </audio>        
-      </div>
-    </div>
-
     <!-- Main content -->
     <div @click="playMusic" class="row m-5">
       <div class="col-2">
@@ -104,14 +71,6 @@
         </div> -->
       </div>
     </div>
-
-    <!-- Footer content -->
-    <div class="row fixed-bottom">
-      <div class="col text-center">
-        <small class="bg-primary text-warning">Copyright Reserved &copy; {{curr_year}} - <a :href="email" class="text-warning">Jeries Abedrabbo</a></small>
-      </div>
-    </div>
-
 </template>
 
 <style scoped>
